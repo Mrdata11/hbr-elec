@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Électricité Bruxelles | Conseils et guides | HBR Électricité générale</title>
+    <meta name="description" content="Conseils d'expert en électricité à Bruxelles. Guides pratiques sur l'installation électrique, les panneaux photovoltaïques, la mise en conformité RGIE et la domotique.">
+    <meta name="keywords" content="blog électricité, conseils électricien bruxelles, guide RGIE, panneaux solaires belgique, rénovation électrique">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.hbr-elec.be/blog/">
+
+    <meta property="og:title" content="Blog Électricité | HBR Électricité générale">
+    <meta property="og:description" content="Conseils d'expert en électricité à Bruxelles. Guides pratiques, astuces et informations sur les normes belges.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hbr-elec.be/blog/">
+    <meta property="og:locale" content="fr_BE">
+
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .blog-header {
+            background: var(--color-primary);
+            padding: calc(var(--navbar-height) + var(--spacing-2xl)) 0 var(--spacing-2xl);
+            color: var(--color-white);
+            text-align: center;
+        }
+        .blog-header h1 {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--spacing-xs);
+        }
+        .blog-header p {
+            font-size: var(--font-size-lg);
+            opacity: 0.85;
+        }
+        .breadcrumb {
+            padding: var(--spacing-sm) 0;
+            font-size: var(--font-size-sm);
+            color: var(--color-text-light);
+        }
+        .breadcrumb a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-lg);
+            padding: var(--spacing-xl) 0 var(--spacing-2xl);
+        }
+        @media (min-width: 768px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .blog-card {
+            background: var(--color-white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        .blog-card__body {
+            padding: var(--spacing-md) var(--spacing-lg);
+        }
+        .blog-card__tag {
+            display: inline-block;
+            background: var(--color-accent);
+            color: var(--color-primary-dark);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            margin-bottom: var(--spacing-xs);
+        }
+        .blog-card__title {
+            font-size: var(--font-size-xl);
+            color: var(--color-text);
+            margin-bottom: var(--spacing-xs);
+            line-height: var(--line-height-heading);
+        }
+        .blog-card__title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .blog-card__title a:hover {
+            color: var(--color-primary);
+        }
+        .blog-card__excerpt {
+            color: var(--color-text-light);
+            font-size: var(--font-size-sm);
+            line-height: 1.7;
+            margin-bottom: var(--spacing-sm);
+        }
+        .blog-card__link {
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+            text-decoration: none;
+        }
+        .blog-card__link:hover {
+            text-decoration: underline;
+        }
+        .blog-cta {
+            background: var(--color-gray-light);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xl);
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+        .blog-cta h2 {
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--spacing-sm);
+        }
+        .blog-cta p {
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-md);
+        }
+        .blog-footer {
+            background: var(--color-primary-dark);
+            color: rgba(255,255,255,0.7);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+            font-size: var(--font-size-sm);
+        }
+        .blog-footer a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header scrolled">
+        <nav class="navbar container" aria-label="Navigation">
+            <a href="../" class="navbar__logo" aria-label="HBR Électricité générale - Accueil">
+                <img src="../images/logo-hbr-horizontal.png" alt="HBR Électricité générale" class="navbar__logo-img" width="180" height="50">
+            </a>
+            <ul class="navbar__menu" style="display:flex; list-style:none; gap:1.5rem; align-items:center;">
+                <li><a href="../">Accueil</a></li>
+                <li><a href="../#services">Services</a></li>
+                <li><a href="../#contact">Contact</a></li>
+                <li><a href="../#contact" class="btn btn--accent">Devis gratuit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="blog-header">
+        <div class="container">
+            <h1>Blog Électricité</h1>
+            <p>Conseils d'expert, guides pratiques et actualités pour vos projets électriques à Bruxelles</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="../">Accueil</a> &rsaquo; Blog
+        </nav>
+
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">Guide</span>
+                    <h2 class="blog-card__title">
+                        <a href="electricien-bruxelles-guide.html">Électricien à Bruxelles : comment choisir le bon professionnel</a>
+                    </h2>
+                    <p class="blog-card__excerpt">Les critères essentiels pour sélectionner un électricien fiable et agréé dans la région de Bruxelles-Capitale. Certifications, questions à poser et signaux d'alerte.</p>
+                    <a href="electricien-bruxelles-guide.html" class="blog-card__link">Lire l'article &rarr;</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">Photovoltaïque</span>
+                    <h2 class="blog-card__title">
+                        <a href="panneaux-photovoltaiques-prime-bruxelles-2026.html">Panneaux photovoltaïques à Bruxelles : primes, coût et rentabilité en 2026</a>
+                    </h2>
+                    <p class="blog-card__excerpt">Tout savoir sur l'installation de panneaux solaires en Région bruxelloise : coûts moyens, primes disponibles, certificats verts et retour sur investissement.</p>
+                    <a href="panneaux-photovoltaiques-prime-bruxelles-2026.html" class="blog-card__link">Lire l'article &rarr;</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">Normes</span>
+                    <h2 class="blog-card__title">
+                        <a href="mise-en-conformite-rgie-belgique.html">Mise en conformité électrique RGIE : guide complet pour la Belgique</a>
+                    </h2>
+                    <p class="blog-card__excerpt">Comprendre les normes RGIE, savoir quand un contrôle est obligatoire, les infractions les plus courantes et comment préparer votre installation.</p>
+                    <a href="mise-en-conformite-rgie-belgique.html" class="blog-card__link">Lire l'article &rarr;</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">Budget</span>
+                    <h2 class="blog-card__title">
+                        <a href="cout-renovation-electrique-bruxelles.html">Coût d'une rénovation électrique à Bruxelles : estimation et budget</a>
+                    </h2>
+                    <p class="blog-card__excerpt">Fourchettes de prix pour une rénovation électrique partielle ou complète, facteurs qui influencent le budget et conseils pour optimiser votre investissement.</p>
+                    <a href="cout-renovation-electrique-bruxelles.html" class="blog-card__link">Lire l'article &rarr;</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="blog-cta">
+            <h2>Besoin d'un électricien à Bruxelles ?</h2>
+            <p>Devis gratuit et sans engagement pour tous vos projets électriques.</p>
+            <a href="../#contact" class="btn btn--accent btn--lg">Demander un devis gratuit</a>
+        </div>
+    </main>
+
+    <footer class="blog-footer">
+        <div class="container">
+            <p>&copy; 2026 <a href="../">HBR Électricité générale</a> — Électricien à Bruxelles</p>
+        </div>
+    </footer>
+</body>
+</html>
